@@ -1,3 +1,7 @@
 /.vscode
 /djangoBlogProf
 /static
+__pycache__
+*.pyc
+*~
+.DS_Store
