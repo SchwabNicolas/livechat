@@ -1,9 +1,10 @@
 # Installation
 
--   Cloner la repo
--   pip install -r requirements.txt
--   Migrations
--   Createsuperuser
--   Se connecter avec le superuser sur fireox (besoin de firefox pour les multi-containers) https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
--   Créer un deuxième container et se connecter avec le deuxième compte créé depuis l'admin panel
--   Aller sur localhost:8000/dialogs/Khodok et avec l'autre sur localhost:8000/dialogs/boiboi
+1.   Cloner la repo
+2.   Installation des dépendances avec pip : ``pip install -r requirements.txt``
+3.   Créer les migrations de la base de donnée : ``python manage.py makemigrations``
+4.   Effectuer les migrations vers la base de donnée : ``python manage.py migrate``
+5.   Créer un super-user : ``python manage.py createsuperuser``
+6.   Se connecter avec le superuser sur Firefox (besoin de Firefox pour les multi-containers) https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
+7.   Créer un deuxième container et se connecter avec le deuxième compte créé depuis l'admin panel
+8.   Aller sur localhost:8000/dialogs/Khodok et avec l'autre sur localhost:8000/dialogs/boiboi
